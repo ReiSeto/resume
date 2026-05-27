@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="vi" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Nguyễn Văn Hải - AI Agent Developer | Backend Developer | RAG Pipeline Specialist">
+    <meta name="keywords" content="AI Agent, Backend Developer, Python, RAG, LangChain, Pinecone">
+    <title>Nguyễn Văn Hải | AI Agent Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Particle Background -->
+    <canvas id="particles"></canvas>
+
+    <!-- Theme Toggle -->
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+        <i class="fas fa-moon"></i>
+        <i class="fas fa-sun"></i>
+    </button>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">NVH<span class="logo-dot">.</span></a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#about" class="nav-link">Giới thiệu</a></li>
+                <li><a href="#skills" class="nav-link">Kỹ năng</a></li>
+                <li><a href="#experience" class="nav-link">Kinh nghiệm</a></li>
+                <li><a href="#projects" class="nav-link">Dự án</a></li>
+                <li><a href="#education" class="nav-link">Học vấn</a></li>
+                <li><a href="#contact" class="nav-link">Liên hệ</a></li>
+            </ul>
+            <button class="nav-hamburger" id="hamburger" aria-label="Menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-content">
+            <div class="hero-badge animate-fade-up">
+                <i class="fas fa-robot"></i>
+                <span>AI Agent Developer</span>
+            </div>
+            <h1 class="hero-name animate-fade-up delay-1">
+                Nguyễn Văn <span class="text-gradient">Hải</span>
+            </h1>
+            <p class="hero-tagline animate-fade-up delay-2">
+                Xây dựng hệ thống AI thông minh · Backend vững chắc · Tư duy hướng sản phẩm
+            </p>
+            <div class="hero-stats animate-fade-up delay-3">
+                <div class="stat-item">
+                    <span class="stat-number" data-target="3.68">0</span>
+                    <span class="stat-label">GPA / 4.0</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <span class="stat-number" data-target="835">0</span>
+                    <span class="stat-label">TOEIC</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <span class="stat-number" data-target="2">0</span>
+                    <span class="stat-label">Projects</span>
+                </div>
+            </div>
+            <div class="hero-cta animate-fade-up delay-4">
+                <a href="#contact" class="btn btn-primary">
+                    <i class="fas fa-paper-plane"></i> Liên hệ ngay
+                </a>
+                <a href="#projects" class="btn btn-outline">
+                    <i class="fas fa-code"></i> Xem dự án
+                </a>
+            </div>
+        </div>
+        <div class="scroll-indicator animate-fade-up delay-4">
+            <div class="mouse">
+                <div class="mouse-wheel"></div>
+            </div>
+            <span>Cuộn xuống</span>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section" id="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag"><i class="fas fa-user"></i> Giới thiệu</span>
+                <h2 class="section-title">Về tôi</h2>
+            </div>
+            <div class="about-grid">
+                <div class="about-card glass-card">
+                    <div class="about-text">
+                        <p>
+                            Cử nhân Khoa học Máy tính <strong>(GPA 3.68/4.0)</strong> với nền tảng vững về 
+                            <strong>Backend, Database</strong> và <strong>hệ thống AI</strong>. Có kinh nghiệm thực tế 
+                            trong lĩnh vực <strong>Annotation và Kiểm soát chất lượng dữ liệu AI</strong>. Song song 
+                            phát triển các dự án cá nhân về <strong>RAG Pipeline, Backend Development</strong> và 
+                            <strong>Workflow Automation</strong>.
+                        </p>
+                        <p>
+                            Tìm kiếm vị trí <strong>AI Agent Developer</strong> để đưa kiến thức vào bài toán thực tế, 
+                            tạo giá trị đo đếm được.
+                        </p>
+                    </div>
+                    <div class="about-highlights">
+                        <div class="highlight-item">
+                            <div class="highlight-icon"><i class="fas fa-brain"></i></div>
+                            <div>
+                                <h4>AI & LLM</h4>
+                                <p>RAG Pipeline, Prompt Engineering, AI Agent Workflow</p>
+                            </div>
+                        </div>
+                        <div class="highlight-item">
+                            <div class="highlight-icon"><i class="fas fa-server"></i></div>
+                            <div>
+                                <h4>Backend</h4>
+                                <p>Python Flask/FastAPI, RESTful API, RBAC</p>
+                            </div>
+                        </div>
+                        <div class="highlight-item">
+                            <div class="highlight-icon"><i class="fas fa-database"></i></div>
+                            <div>
+                                <h4>Database</h4>
+                                <p>MySQL, MongoDB, SQL Server, Schema Design</p>
+                            </div>
+                        </div>
+                        <div class="highlight-item">
+                            <div class="highlight-icon"><i class="fas fa-cloud"></i></div>
+                            <div>
+                                <h4>DevOps</h4>
+                                <p>Docker, GCP, Linux, Git, n8n Automation</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section section-alt" id="skills">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag"><i class="fas fa-code"></i> Kỹ năng</span>
+                <h2 class="section-title">Kỹ năng chuyên môn</h2>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-card glass-card" data-category="ai">
+                    <div class="skill-card-header">
+                        <div class="skill-icon"><i class="fas fa-brain"></i></div>
+                        <h3>AI / LLM</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">RAG Pipeline</span>
+                        <span class="skill-tag">Prompt Engineering</span>
+                        <span class="skill-tag">LangChain</span>
+                        <span class="skill-tag">Pinecone</span>
+                        <span class="skill-tag">AI Agent Workflow</span>
+                        <span class="skill-tag">Vector DB</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-bar-fill" data-width="85"></div>
+                    </div>
+                </div>
+                <div class="skill-card glass-card" data-category="backend">
+                    <div class="skill-card-header">
+                        <div class="skill-icon"><i class="fas fa-server"></i></div>
+                        <h3>Backend</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">Flask</span>
+                        <span class="skill-tag">FastAPI</span>
+                        <span class="skill-tag">RESTful API</span>
+                        <span class="skill-tag">MVC</span>
+                        <span class="skill-tag">RBAC</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-bar-fill" data-width="90"></div>
+                    </div>
+                </div>
+                <div class="skill-card glass-card" data-category="database">
+                    <div class="skill-card-header">
+                        <div class="skill-icon"><i class="fas fa-database"></i></div>
+                        <h3>Cơ sở dữ liệu</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">MySQL</span>
+                        <span class="skill-tag">MongoDB</span>
+                        <span class="skill-tag">SQL Server</span>
+                        <span class="skill-tag">Schema Design</span>
+                        <span class="skill-tag">Query Optimization</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-bar-fill" data-width="88"></div>
+                    </div>
+                </div>
+                <div class="skill-card glass-card" data-category="devops">
+                    <div class="skill-card-header">
+                        <div class="skill-icon"><i class="fas fa-cloud"></i></div>
+                        <h3>DevOps & Tools</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Docker</span>
+                        <span class="skill-tag">Docker Compose</span>
+                        <span class="skill-tag">GCP</span>
+                        <span class="skill-tag">Linux</span>
+                        <span class="skill-tag">Git</span>
+                        <span class="skill-tag">n8n</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-bar-fill" data-width="82"></div>
+                    </div>
+                </div>
+                <div class="skill-card glass-card" data-category="language">
+                    <div class="skill-card-header">
+                        <div class="skill-icon"><i class="fas fa-language"></i></div>
+                        <h3>Ngoại ngữ</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">TOEIC 835/990</span>
+                        <span class="skill-tag">Technical Docs</span>
+                        <span class="skill-tag">Research Papers</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-bar-fill" data-width="83"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="section" id="experience">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag"><i class="fas fa-briefcase"></i> Kinh nghiệm</span>
+                <h2 class="section-title">Kinh nghiệm làm việc</h2>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot">
+                        <i class="fas fa-tags"></i>
+                    </div>
+                    <div class="timeline-content glass-card">
+                        <div class="timeline-header">
+                            <div>
+                                <h3>Chuyên viên Annotation & QA Data</h3>
+                                <span class="timeline-org">INFINIQ (Remote)</span>
+                            </div>
+                            <span class="timeline-period">
+                                <i class="fas fa-calendar"></i> 5/2025 – Nay
+                            </span>
+                        </div>
+                        <ul class="timeline-details">
+                            <li>
+                                <i class="fas fa-check-circle"></i>
+                                <span>Gán nhãn và kiểm soát chất lượng dữ liệu cho các dự án AI, đảm bảo tính chính xác và nhất quán của dataset.</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-check-circle"></i>
+                                <span>Đánh giá, phân loại dữ liệu và phản hồi chất lượng theo guideline, hỗ trợ cải thiện hiệu năng mô hình AI.</span>
+                            </li>
+                        </ul>
+                        <div class="timeline-tags">
+                            <span>Data Annotation</span><span>Quality Assurance</span><span>AI Data</span><span>Remote</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot">
+                        <i class="fas fa-microscope"></i>
+                    </div>
+                    <div class="timeline-content glass-card">
+                        <div class="timeline-header">
+                            <div>
+                                <h3>Chuyên viên Kiểm soát Chất lượng Dữ liệu AI</h3>
+                                <span class="timeline-org">Testworks Vietnam</span>
+                            </div>
+                            <span class="timeline-period">
+                                <i class="fas fa-calendar"></i> 9/2024 – 3/2025
+                            </span>
+                        </div>
+                        <ul class="timeline-details">
+                            <li>
+                                <i class="fas fa-check-circle"></i>
+                                <span>Gán nhãn và kiểm soát chất lượng dataset cho hệ thống AI xe tự hành, đảm bảo accuracy <strong>>98%</strong> trên các batch dữ liệu hình ảnh.</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-check-circle"></i>
+                                <span>Viết Python script tự động hoá kiểm tra chất lượng dữ liệu, phân tích edge case và đề xuất cải thiện annotation guideline.</span>
+                            </li>
+                        </ul>
+                        <div class="timeline-tags">
+                            <span>Python</span><span>Data QA</span><span>Annotation</span><span>Autonomous Vehicle</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section section-alt" id="projects">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag"><i class="fas fa-rocket"></i> Dự án</span>
+                <h2 class="section-title">Dự án tiêu biểu</h2>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card glass-card">
+                    <div class="project-image">
+                        <div class="project-image-placeholder">
+                            <i class="fas fa-search-plus"></i>
+                            <span>RAG Pipeline</span>
+                        </div>
+                        <div class="project-overlay">
+                            <a href="https://github.com/ReiSeto/pinecorn_rag_n8n" target="_blank" class="project-link-btn">
+                                <i class="fab fa-github"></i> View Code
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-category">AI / Machine Learning</div>
+                        <h3>Hệ thống RAG — Tìm kiếm & Truy xuất Tài liệu bằng AI</h3>
+                        <p>
+                            Pipeline end-to-end: Ingestion → Chunking → Embedding → Vector Indexing (Pinecone) 
+                            → Semantic Search → LLM Response Generation. Tích hợp n8n tự động ingest tài liệu mới, 
+                            trigger re-indexing, kết nối Google Sheets & CRM.
+                        </p>
+                        <div class="project-tech">
+                            <span>Python</span><span>LangChain</span><span>Pinecone</span><span>n8n</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/ReiSeto/pinecorn_rag_n8n" target="_blank">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card glass-card">
+                    <div class="project-image">
+                        <div class="project-image-placeholder project-placeholder-clinic">
+                            <i class="fas fa-hospital"></i>
+                            <span>Clinic System</span>
+                        </div>
+                        <div class="project-overlay">
+                            <a href="https://github.com/ReiSeto/clinicofficial" target="_blank" class="project-link-btn">
+                                <i class="fab fa-github"></i> View Code
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-category">Full-Stack Web App</div>
+                        <h3>Hệ thống Quản lý Phòng khám — Enterprise Web App</h3>
+                        <p>
+                            Quy trình khép kín: Đăng ký → Khám bệnh → Xét nghiệm → Kê đơn → Thanh toán. 
+                            RESTful API, phân quyền RBAC (Admin, Bác sĩ, Y tá, Kỹ thuật viên). 
+                            Containerisation bằng Docker, deploy GCP, tích hợp Cloudinary & Twilio SMS.
+                        </p>
+                        <div class="project-tech">
+                            <span>Flask</span><span>MySQL</span><span>MongoDB</span><span>Docker</span><span>GCP</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/ReiSeto/clinicofficial" target="_blank">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="section" id="education">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag"><i class="fas fa-graduation-cap"></i> Học vấn</span>
+                <h2 class="section-title">Học vấn</h2>
+            </div>
+            <div class="education-card glass-card">
+                <div class="edu-icon">
+                    <i class="fas fa-university"></i>
+                </div>
+                <div class="edu-content">
+                    <div class="edu-header">
+                        <div>
+                            <h3>Cử nhân Khoa học Máy tính</h3>
+                            <span class="edu-school">Trường Công nghệ — Đại học Kinh tế Quốc dân</span>
+                        </div>
+                        <span class="edu-period"><i class="fas fa-calendar"></i> 9/2021 – 8/2025</span>
+                    </div>
+                    <div class="edu-details">
+                        <div class="edu-gpa">
+                            <span class="gpa-number">3.68</span>
+                            <span class="gpa-total">/ 4.0</span>
+                        </div>
+                        <div class="edu-courses">
+                            <h4>Coursework chính:</h4>
+                            <div class="course-tags">
+                                <span>Machine Learning</span>
+                                <span>Database Systems</span>
+                                <span>Software Engineering</span>
+                                <span>Algorithms & Data Structures</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section section-alt" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag"><i class="fas fa-envelope"></i> Liên hệ</span>
+                <h2 class="section-title">Kết nối với tôi</h2>
+            </div>
+            <div class="contact-grid">
+                <a href="mailto:haifladc@gmail.com" class="contact-card glass-card">
+                    <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                    <h4>Email</h4>
+                    <p>haifladc@gmail.com</p>
+                </a>
+                <a href="tel:+84345865632" class="contact-card glass-card">
+                    <div class="contact-icon"><i class="fas fa-phone"></i></div>
+                    <h4>Điện thoại</h4>
+                    <p>+84 345 865 632</p>
+                </a>
+                <a href="https://github.com/ReiSeto" target="_blank" class="contact-card glass-card">
+                    <div class="contact-icon"><i class="fab fa-github"></i></div>
+                    <h4>GitHub</h4>
+                    <p>github.com/ReiSeto</p>
+                </a>
+                <div class="contact-card glass-card">
+                    <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+                    <h4>Địa chỉ</h4>
+                    <p>Hà Nội, Việt Nam</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Nguyễn Văn Hải. Built with <i class="fas fa-heart" style="color: var(--accent-primary);"></i></p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
